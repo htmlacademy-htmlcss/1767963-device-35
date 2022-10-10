@@ -13,8 +13,9 @@
           <ul class="navigation-list">
             <li class="navigation-item">
               <label>
-                 <input type="text" name="Search"><input type="submit" value="Найти">
-              </label>
+                <input type="text" name="Search">
+             </label>
+             <input type="submit" value="Найти">
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Вход</a>
@@ -32,30 +33,42 @@
           </ul>
           <ul>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="catalog.html" type="button">Каталог товаров</a>
+              <a class="navigation-link navigation-link-current" href="catalog.html" >Каталог товаров</a>
                 <ul>
                   <li class="navigation-item">
                     <a class="navigation-link" href="#">Виртуальная реальность</a>    
-                  </li><li class="navigation-item">
+                  </li>
+                  <li class="navigation-item">
                     <a class="navigation-link" href="#">Моноподы для cелфи</a>    
-                  </li><li class="navigation-item">
+                  </li>
+                  <li class="navigation-item">
                     <a class="navigation-link" href="#">Экшн-камеры</a>    
-                  </li><li class="navigation-item">
+                  </li>
+                  <li class="navigation-item">
                     <a class="navigation-link" href="#">Фитнес-браслеты</a>    
-                  </li><li class="navigation-item">
+                  </li>
+                  <li class="navigation-item">
                     <a class="navigation-link" href="#">Умные часы</a>    
-                  </li><li class="navigation-item">
+                  </li>
+                  <li class="navigation-item">
                     <a class="navigation-link" href="#">Квадрокоптеры</a>    
                   </li>
                 </ul>
+
                 <ul>
-                  </li><li class="navigation-item">
+                  <li class="navigation-item">
                     <a class="navigation-link" href="#">Доставка</a>    
-                  </li><li class="navigation-item">
+                  </li>
+                  <li class="navigation-item">
                     <a class="navigation-link" href="#">Гарантия</a>    
-                  </li><li class="navigation-item">
-                    <a class="navigation-link" href="#">Контакты</a>   
-                </ul>  
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#">Контакты</a>
+                  </li> 
+                </ul>
+            </li>
+                  
+          </ul> 
         </nav>
   
       </header>
@@ -77,79 +90,95 @@
         </header>
         <section class="catalog-products">
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-          <label class="control">Фильтр:<form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="catalog-filter-area">
+                <legend class="catalog-filter-title">Фильтр:</legend>
+                
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-filter-title">Стоимость</legend>
+                  
+                  <input type="range" name="price" min="0" max="5000" step="100">
+                  
+                </fieldset>
            
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Цвет</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="bed-head-for-men" checked>
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-filter-title">Цвет</legend>
+                  <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="control-input" type="checkbox" name="black" checked>
+          
+                        Черный
+                      </label>
+                    </li>
+
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="control-input" type="checkbox" name="white" checked>
+                        Белый
+                      </label>
+                    </li>
+
+                      
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                      <input class="control-input" type="checkbox" name="blue" >
+                      Синий
+                    </label>
+                    </li>
+
+                    
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                      <input class="control-input" type="checkbox" name="red" >
+                      Красный
+                      </label>
+                    </li>
+
+                    
+                  
+                    <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="pink" >
+                      Розовый
+                    </label>
+                    </li>
+                  
+                  </ul>
+                </fieldset>
       
-                    Черный
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="bed-head-for-men" checked>
-      
-                    Белый
-                  </label>
-                  <label class="control">
-                </li>
-                <li class="catalog-filter-item">
-                  <input class="control-input" type="checkbox" name="bed-head-for-men" >
-    
-                  Синий
-                </label>
-                <label class="control">
-              </li>
-                <li class="catalog-filter-item">
-                  <input class="control-input" type="checkbox" name="bed-head-for-men" >
-    
-                  Красный
-                </label>
-                <label class="control">
-              </li>
-              <li class="catalog-filter-item">
-                <input class="control-input" type="checkbox" name="bed-head-for-men" >
-  
-                Розовый
-              </label>
-              <label class="control">
-            </li>
-              </ul>
-            </fieldset>
-  
-            <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Bluetooth</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="shaving-supplies" checked>
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-filter-title">Bluetooth</legend>
+                  <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="control-input" type="radio" name="product-group" value="shaving-supplies" checked>
 
-                  Есть
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="care-products" >
+                        Есть
+                      </label>
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="control-input" type="radio" name="product-group" value="care-products" >
 
-                  Нет
-                </label>
-              </li>
-              
-            </ul>
-          </fieldset>
+                        Нет
+                      </label>
+                    </li>
+                    
+                  </ul>
+                </fieldset>
+             </fieldset>
 
-            <button class="button" type="submit">Показать</button>
-          </form></label>
+              <button class="button" type="submit">Показать</button>
+          </form>
 
-          <label class="control">Сортировка:<select aria-label="Сортировка">
-            <option value="popular">Популярное</option>
-            <option value="cheap">Дешёвое</option>
-            <option value="expensive">Дорогое</option>
-          </select>
+          <label class="control">Сортировка:
+            <select aria-label="Сортировка">
+                <option value="popular">Популярное</option>
+                <option value="cheap">Дешёвое</option>
+                <option value="expensive">Дорогое</option>
+            </select>
           </label>
 
           <ul>
@@ -201,37 +230,7 @@
               <a class="pagination-link" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">6</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">7</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">8</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">9</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">11</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">12</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">13</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">14</a>
+              <a class="pagination-link" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">15</a>
@@ -260,13 +259,17 @@
         </section>
   
         <section class="footer-navigetion">
+          <h2 class="visually-hidden">Сервисы</h2>
           <ul>
-            </li><li class="footer-navigation-item">
+            <li class="footer-navigation-item">
               <a class="footer-navigation-link" href="#">Доставка</a>    
-            </li><li class="footer-navigation-item">
+            </li>
+            <li class="footer-navigation-item">
               <a class="footer-navigation-link" href="#">Гарантия</a>    
-            </li><li class="footer-navigation-item">
-              <a class="footer-navigation-link" href="#">Контакты</a>   
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link" href="#">Контакты</a>
+            </li>   
           </ul> 
         </section>
     
