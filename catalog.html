@@ -93,7 +93,7 @@
           
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-area">
-                <legend class="catalog-filter-title">Фильтр:</legend>
+                <legend class="catalog-filter-title-big">Фильтр:</legend>
                 
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Стоимость</legend>
@@ -173,13 +173,14 @@
               <button class="button" type="submit">Показать</button>
           </form>
 
-          <label class="control">Сортировка:
-            <select aria-label="Сортировка">
-                <option value="popular">Популярное</option>
-                <option value="cheap">Дешёвое</option>
-                <option value="expensive">Дорогое</option>
-            </select>
-          </label>
+          <div class="sorting-container"><label class="control">Сортировка:
+              <select aria-label="Сортировка">
+                  <option value="popular">Популярное</option>
+                  <option value="cheap">Дешёвое</option>
+                  <option value="expensive">Дорогое</option>
+              </select>
+            </label>
+          </div>
 
           <ul>
             <li class="product-card">
@@ -217,7 +218,7 @@
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="visually-hidden">Назад</span>
+                <span >Назад</span>
               </a>
             </li>
             <li class="pagination-item">
@@ -237,7 +238,7 @@
             </li>
             <li class="pagination-item">
               <a class="pagination-link pagination-next" href="#">
-                <span class="visually-hidden">Вперёд</span>
+                <span >Вперёд</span>
               </a>
             </li>
           </ul>
